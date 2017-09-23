@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="estilo.css"/>
+         <script type="text/javascript" src="Calculadora.js"></script>
+    </head>
+    <body>
+        <div class="cabecario1"> 
+            <h4>Calculadora<br>online</h4>
+        </div>
+        
+        <div class="cabecario2"> 
+         
+        </div>
+       <br><br><br>
+        <div class="corpo">             
+            <form action=" " method="post" name="fr">
+                <div class="corpo_l1">        
+                    Valor 1: <input type="number" name="v1" id="valor1"><br>
+                    Valor 2: <input type="number" name="v2" id="valor2"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select id="operacao" name="opcaoDeOperacao">
+                            <option value="somar">Somar</option>
+                            <option value="Subtrair">Subtrair</option>
+                            <option value="Multiplicar">Multiplicar</option>
+                            <option value="dividir">Dividir</option>
+                    </select>
+                </div>
+                <div class="corpo_l2">
+                    <label>Resultado</label>
+                    <input type ="text" name="Resultado" id="result"/><br>
+                    <p id="resposta" >Resposta</p>
+                <!--    <input type ="submit" value="calcular" style="background-color: #00BFFF"/>  -->
+                    <p> <input type="button" name="btncalcular" value="Calcular" onclick="calcular()">
+                </div>
+                
+            </form>
+        </div>
+       
+       <div class="rodape"> 
+         Desenvolvido por Anderson Guimaraes
+        </div>
+       
+    </body>
+</html>
